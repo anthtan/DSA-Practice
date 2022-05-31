@@ -16,8 +16,12 @@ Since the indices are in one-to-one correspondence with the array's data (i.e. `
 
 $$(0 + 1 + 2 + \dots + nums\[n\]) - ((0 + 1 + 2 + \dots + nums\[n\]) - nums\[j\]) = nums\[j\], j = 1, \dots, n$$
 
+### Solution (in Python)
 
-
+```python
+def missingNumber(self, nums: List[int]) -> int: 
+  return sum(list(range(len(nums))) - sum(nums) 
+```
 
 
 
