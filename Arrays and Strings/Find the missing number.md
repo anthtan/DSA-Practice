@@ -5,11 +5,11 @@
 3. [Solution via Python](#solution-via-python)
 
 
-### Problem Statement
+## Problem Statement
 
 Given an array ```nums``` containing ```n``` distinct numbers in the range ```[0, n]```, return the only number in the range that is missing from the array. 
 
-### Solution via Arithmetic
+## Solution via Arithmetic
 
 Consider the array ```nums``` containing ```n = 3``` distinct numbers in the range ```[0, 3]```. To determine if a number is missing from ```nums```, say 2, we can think in terms of the sum of the entries. In other words, 
 
@@ -25,7 +25,7 @@ $$m = (0 + 1 + 2 + \dots + n) - ((0 + 1 + 2 + \dots + n) - m),$$
 
 where $m = 0, 1, 2, \dots, n$. 
 
-### Solution via Python 
+## Solution via Python 
 
 ```python
 def missingNumber(self, nums: List[int]) -> int: 
